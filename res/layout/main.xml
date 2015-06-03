@@ -11,28 +11,50 @@
     <LinearLayout
 	    android:layout_width="match_parent"
 	    android:layout_height="wrap_content"
-	    android:orientation="horizontal"
-	    android:layout_centerInParent="true" >
+	    android:orientation="vertical"	    
+	    android:layout_alignParentTop="true" >
 	    <Button
 	        android:id="@+id/zoom"
-	        android:layout_width="wrap_content"
+	        android:layout_width="match_parent"
 	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal"
 	        android:text="Zoom"/>
 	     <Button
 	        android:id="@+id/fade"
-	        android:layout_width="wrap_content"
+	        android:layout_width="match_parent"
 	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal"
 	        android:text="Fade"/>
 	     <Button
 	        android:id="@+id/blink"
-	        android:layout_width="wrap_content"
+	        android:layout_width="match_parent"
 	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal"
 	        android:text="Blink"/>
 	     <Button
 	        android:id="@+id/rotate"
-	        android:layout_width="wrap_content"
+	        android:layout_width="match_parent"
 	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal"
 	        android:text="Rotate"/>
+	      <Button
+	        android:id="@+id/move"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal"
+	        android:text="Move"/>
+	      <Button
+	        android:id="@+id/slideup"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal"
+	        android:text="Slide Up"/>
+	      <Button
+	        android:id="@+id/slidedown"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal"
+	        android:text="Slide Down"/>
 
 	</LinearLayout>
 </RelativeLayout>

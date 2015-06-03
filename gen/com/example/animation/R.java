@@ -11,8 +11,11 @@ public final class R {
     public static final class anim {
         public static final int blink=0x7f040000;
         public static final int fade=0x7f040001;
-        public static final int rotate=0x7f040002;
-        public static final int zoom=0x7f040003;
+        public static final int move=0x7f040002;
+        public static final int rotate=0x7f040003;
+        public static final int slidedown=0x7f040004;
+        public static final int slideup=0x7f040005;
+        public static final int zoom=0x7f040006;
     }
     public static final class attr {
     }
@@ -34,7 +37,10 @@ public final class R {
         public static final int blink=0x7f080003;
         public static final int fade=0x7f080002;
         public static final int image=0x7f080000;
+        public static final int move=0x7f080005;
         public static final int rotate=0x7f080004;
+        public static final int slidedown=0x7f080007;
+        public static final int slideup=0x7f080006;
         public static final int zoom=0x7f080001;
     }
     public static final class layout {

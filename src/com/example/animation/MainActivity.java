@@ -12,7 +12,7 @@ import android.widget.ImageView;
 
 public class MainActivity extends Activity {
 	ImageView image ;
-	Button zoom,fade,blink,rotate;
+	Button zoom,fade,blink,rotate,move,slideup,slidedown;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -23,6 +23,9 @@ public class MainActivity extends Activity {
 		fade = (Button)findViewById(R.id.fade);
 		blink = (Button)findViewById(R.id.blink);
 		rotate = (Button)findViewById(R.id.rotate);
+		move = (Button)findViewById(R.id.move);
+		slideup = (Button)findViewById(R.id.slideup);
+		slidedown = (Button)findViewById(R.id.slidedown);
 		
 		zoom.setOnClickListener(new OnClickListener() {
 			
@@ -51,6 +54,27 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View arg0) {
 				startActivity(new Intent(MainActivity.this,Rotate.class));
+			}
+		});
+		move.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				startActivity(new Intent(MainActivity.this,Move.class));
+			}
+		});
+		slideup.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				startActivity(new Intent(MainActivity.this,SlideUp.class));
+			}
+		});
+		slidedown.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				startActivity(new Intent(MainActivity.this,SlideDown.class));
 			}
 		});
 	}
