@@ -8,33 +8,27 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
-
+/**
+ * Fading image activity
+ * @author Mohit Soni
+ *
+ *
+ */
 public class Fade extends Activity {
 	ImageView image ;
-	Button fade;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.zoom);
+		setContentView(R.layout.fade);
 		image = (ImageView)findViewById(R.id.image);
-		fade = (Button)findViewById(R.id.fade);
-		fade.setOnClickListener(new OnClickListener() {
-			
-			@Override
-			public void onClick(View arg0) {
-				clockWise(getCurrentFocus());
-			}
-		});
 		
-	}
-	
-	
-	public void clockWise(View view){
-		
+		// Animation object to pass to image view
 		Animation ani =  AnimationUtils.loadAnimation(getApplicationContext(), R.anim.fade);
 		image.setAnimation(ani);
 		
+		
 	}
+	
 
 }

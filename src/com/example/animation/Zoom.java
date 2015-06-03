@@ -8,32 +8,29 @@ import android.view.animation.Animation;
 import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
-
+/**
+ * Zoom animation activity class
+ * @author Mohit Soni
+ *
+ *
+ */
 public class Zoom extends Activity {
-	ImageView image ;
-	Button zoom;
-
+	ImageView image;
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.zoom);
 		image = (ImageView)findViewById(R.id.image);
-		zoom = (Button)findViewById(R.id.zoom);
-		zoom.setOnClickListener(new OnClickListener() {
-			
-			@Override
-			public void onClick(View arg0) {
-				clockWise(getCurrentFocus());
-			}
-		});
+		//Animation object to pass to image view 
+		Animation ani =  AnimationUtils.loadAnimation(getApplicationContext(), R.anim.zoom);
+		image.setAnimation(ani);
 		
 	}
 	
 	
-	public void clockWise(View view){
+	public void Ani(View view){
 		
-		Animation ani =  AnimationUtils.loadAnimation(getApplicationContext(), R.anim.zoom);
-		image.setAnimation(ani);
+		
 		
 	}
 
