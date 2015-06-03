@@ -1,7 +1,6 @@
 package com.example.animation;
 
 import android.app.Activity;
-import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
@@ -10,39 +9,30 @@ import android.view.animation.AnimationUtils;
 import android.widget.Button;
 import android.widget.ImageView;
 
-public class MainActivity extends Activity {
+public class Fade extends Activity {
 	ImageView image ;
-	Button zoom,fade;
+	Button fade;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.main);
+		setContentView(R.layout.zoom);
 		image = (ImageView)findViewById(R.id.image);
-		zoom = (Button)findViewById(R.id.zoom_main);
-		fade = (Button)findViewById(R.id.fade_main);
-		
-		zoom.setOnClickListener(new OnClickListener() {
-			
-			@Override
-			public void onClick(View arg0) {
-				startActivity(new Intent(MainActivity.this,Zoom.class));
-			}
-		});
-
+		fade = (Button)findViewById(R.id.fade);
 		fade.setOnClickListener(new OnClickListener() {
 			
 			@Override
 			public void onClick(View arg0) {
-				startActivity(new Intent(MainActivity.this,Fade.class));
+				clockWise(getCurrentFocus());
 			}
 		});
+		
 	}
 	
 	
 	public void clockWise(View view){
 		
-		Animation ani =  AnimationUtils.loadAnimation(getApplicationContext(), R.anim.zoom);
+		Animation ani =  AnimationUtils.loadAnimation(getApplicationContext(), R.anim.fade);
 		image.setAnimation(ani);
 		
 	}
