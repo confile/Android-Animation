@@ -50,6 +50,10 @@
             android:name=".SlideDown"
             android:label="@string/app_name" >
         </activity>
+        <activity
+            android:name=".Bounce"
+            android:label="@string/app_name" >
+        </activity>
     </application>
 
 </manifest>

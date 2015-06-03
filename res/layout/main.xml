@@ -55,6 +55,12 @@
 	        android:layout_height="wrap_content"
 	        android:layout_gravity="center_horizontal"
 	        android:text="Slide Down"/>
+	      <Button
+	        android:id="@+id/bounce"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content"
+	        android:layout_gravity="center_horizontal"
+	        android:text="Bounce"/>
 
 	</LinearLayout>
 </RelativeLayout>
