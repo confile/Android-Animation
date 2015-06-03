@@ -14,7 +14,7 @@ import android.widget.ImageView;
  *
  *
  */
-public class Fade extends Activity {
+public class Rotate extends Activity {
 	ImageView image ;
 
 	@Override
@@ -24,7 +24,7 @@ public class Fade extends Activity {
 		image = (ImageView)findViewById(R.id.image);
 		
 		// Animation object to pass to image view
-		Animation ani =  AnimationUtils.loadAnimation(getApplicationContext(), R.anim.fade);
+		Animation ani =  AnimationUtils.loadAnimation(getApplicationContext(), R.anim.rotate);
 		image.setAnimation(ani);
 		
 		

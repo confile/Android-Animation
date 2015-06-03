@@ -30,6 +30,14 @@
             android:name=".Fade"
             android:label="@string/app_name" >
         </activity>
+        <activity
+            android:name=".Blink"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".Rotate"
+            android:label="@string/app_name" >
+        </activity>
     </application>
 
 </manifest>

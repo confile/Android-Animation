@@ -19,7 +19,7 @@ public class Zoom extends Activity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.zoom);
+		setContentView(R.layout.image);
 		image = (ImageView)findViewById(R.id.image);
 		//Animation object to pass to image view 
 		Animation ani =  AnimationUtils.loadAnimation(getApplicationContext(), R.anim.zoom);
