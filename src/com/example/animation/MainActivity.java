@@ -12,7 +12,8 @@ import android.widget.ImageView;
 
 public class MainActivity extends Activity {
 	ImageView image ;
-	Button zoom,fade,blink,rotate,move,slideup,slidedown,bounce;
+	Button zoom,fade,blink,rotate,move,slideup,
+	slidedown,bounce,sequential,together;
 
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
@@ -27,6 +28,9 @@ public class MainActivity extends Activity {
 		slideup = (Button)findViewById(R.id.slideup);
 		slidedown = (Button)findViewById(R.id.slidedown);
 		bounce = (Button)findViewById(R.id.bounce);
+		sequential = (Button)findViewById(R.id.sequential);
+		together = (Button)findViewById(R.id.together);
+		
 		
 		zoom.setOnClickListener(new OnClickListener() {
 			
@@ -83,6 +87,20 @@ public class MainActivity extends Activity {
 			@Override
 			public void onClick(View arg0) {
 				startActivity(new Intent(MainActivity.this,Bounce.class));
+			}
+		});
+		sequential.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				startActivity(new Intent(MainActivity.this,Sequential.class));
+			}
+		});
+		together.setOnClickListener(new OnClickListener() {
+			
+			@Override
+			public void onClick(View arg0) {
+				startActivity(new Intent(MainActivity.this,Together.class));
 			}
 		});
 	}

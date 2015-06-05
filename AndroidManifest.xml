@@ -54,6 +54,15 @@
             android:name=".Bounce"
             android:label="@string/app_name" >
         </activity>
+         <activity
+            android:name=".Sequential"
+            android:label="@string/app_name" >
+        </activity>
+        <activity
+            android:name=".Together"
+            android:label="@string/app_name" >
+        </activity>
+        
     </application>
 
 </manifest>
